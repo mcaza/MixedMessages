@@ -45,7 +45,7 @@ body {
 }
 
 h1, p {
-    color: #3c3744;
+    color: #2d232e;
 }
 
 /* Affirmation Box Styles */
@@ -54,6 +54,7 @@ h1, p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 
 .items-container {
@@ -71,10 +72,91 @@ h1, p {
     font-family: 'Suez One';
     font-size: 3rem;
     margin-top: 4rem;
-    margin-bottom: 0rem;
+    margin-bottom: .5rem;
 }
 
 #date {
-    font-family: Sans-serif;
+    font-family: serif;
     font-size: 2rem;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+#affirmationButton {
+    background-color: #5a465c;
+    color: white;
+    width: 20rem;
+    font-family: Sniglet;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#affirmationButton:hover {
+    border: solid 3px #b4c5e4;
+    width: 20.5rem;
+}
+
+#sentence {
+    font-family: 'Young Serif';
+    font-size: 2.2rem;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    height: 20rem;
+    padding: 0;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 1625px) {
+    .items-container {
+        width: 80%;
+    }
+    img {
+        width: 90%;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    body {
+        max-width: 95%;
+    }
+    .items-container {
+        min-width: 80%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    #sentence {
+        font-size: 1.8em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
+    }
+    .items-container {
+        border-radius: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .items-container h1 {
+        font-size: 2.5rem;
+        margin-top: 4rem;
+    }
+    #date {
+        font-size: 2rem;
+    }
 }
