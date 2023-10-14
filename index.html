@@ -5,18 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <script src="javascript.js"></script>
 </head>
 
 <body>
-    <button onclick="affirmationButton()">Test</button>
-    <p id="sentence"></p>
-    <p id="date">
-        <script type="text/javascript">
-            setDate();
-        </script>
-    </p>
+
+    <div class='body-container'>
+        <div class='logo-container'>
+            <img src="resources/580b585b2edbce24c47b2633.png">
+        </div>
+        <div class='items-container'>
+            <h1>DAILY AFFIRMATION</h1>
+            <p id="date">
+                <script type="text/javascript">
+                    setDate();
+                </script>
+            </p>
+            <button onclick="affirmationButton()">Get Your Affirmation</button>
+            <p id="sentence">    </p>
+            
+        </div>
+    </div>
 </body>
 
 </html>
